@@ -23,7 +23,8 @@ parameters:
 `curl https://dhin-cwi.ddil.ai/data?year=2018`
 
 #### Sample Response
-`[
+```json
+[
 {
 "GEOID": 10001040100,
 "All": 0.2038777908,
@@ -176,7 +177,10 @@ parameters:
 "median_household_income_rank": 54.3689320388,
 "park_access_ppa_rank": 0,
 "employment_density_rank": 2.9126213592
-},...`
+}
+]
+```
+
 <!---
 ### Data Dictionary
 <ul>
