@@ -181,115 +181,114 @@ parameters:
 ]
 ```
 
-<!---
 ### Data Dictionary
 <ul>
 <li>GEOID - Census Tract Code</li>
-<li>All - Proportion of insured population that filed a claim related to one of the DHIN major disease categories within the census tract<li>
-<li>acqhypo -
-<li>alzdisease - Proportion of all claims related to alzhiemer disease
-<li>alzdisorders - Proportion of all claims related to alzhiemer disorder
-ami - Proportion of all claims related to AMI
-anemia - Proportion of all claims related to anemia
-arthritis - Proportion of all claims related to artritis
-asthma - Proportion of all claims related to asthma
-atrialfib - Proportion of all claims related to atrialfib
-breastcancer - Proportion of all claims related to breast cancer 
-cataract - Proportion of all claims related to cataract
-ckd: Proportion of all claims related to ckd
-colorectalcancer - Proportion of all claims related to colorectal cancer
-copd - Proportion of all claims related to copd
-depression - Proportion of all claims related to depression
-diabetes - Proportion of all claims related to diabetes
-endometrial - Proportion of all claims related to endometrial
-glaucoma - Proportion of all claims related glaucoma
-heartfailure - Proportion of all claims related to heart failure
-hipfracture - Proportion of all claims related to hip fracture
-hyperlipidemia - Proportion of all claims related to hyperlipidemia
-hyperplasia - Proportion of all claims related to hyperplasia
-hypertension - Proportion of all claims related to hypertension
-ihd - Proportion of all claims related to IHD
-lungcancer - Proportion of all claims related to lung cancer
-osteoporosis - Proportion of all claims related to osteoporosis
-prostatecancer - Proportion of all claims related to prostate cancer
-stroke - Proportion of all claims related to stroke
-year - Calendar year period of data collection
-population_count - Total census tract population
-median_household_income - Census tract median household income (USD)
-"supermarket_access_pct": 0,
-"tree_canopy_pct": 0.109,
-race_white_pct - Percentage of census tract population identifying racially as White
-race_black_pct - Percentage of census tract population  identifying as Black
-race_asian_pct - Percentage of census tract population racially identifying as Asian
-race_american_indian_alaskan_native_alone_pct - Percentage of census tract population racially identifying as American Indian and/or Alaskan Native
-race_native_hawaiian_pacific_islander_alone_pct - Percentage of census tract population identifying as solely Native Hawaiian and/or Pacific Islander
-race_other_alone_pct - Percentage of census tract population identifying as "Other
-race_two_or_more_pct": 0.0516088592,
-"gender_total_male_pct": 0.510865023,
-"gender_total_female_pct": 0.489134977,
-"age_under_19_pct": 0.2672377768,
-"age_20_29_pct": 0.1259924781,
-"age_30_39_pct": 0.1671541997,
-"age_40_49_pct": 0.1291266193,
-"age_50_59_pct": 0.1391558713,
-"age_60_69_pct": 0.0942331801,
-"age_70_over_pct": 0.0770998746,
-"above_poverty_pct": 0.7059072623,
-"employed_pct": 0.9323308271,
-"bachelors_plus_pct": 0.2238037553,
-"high_school_enrollment_pct": 1,
-"pre_school_enrollment_pct": 0.6781609195,
-"health_insurance_pct": 0.9111334675,
-"medicare_pct": 0.0667337357,
-"medicaid_pct": 0.1961770624,
-"owners_pct": 0.6352941176,
-"habitable_pct": 1,
-"uncrowded_pct": 0.9877005348,
-"severe_cost_burden_owner_pct": 0.1356589147,
-"severe_cost_burden_renter_pct": 0.2323943662,
-"two_parent_pct": 0.5381818182,
-"vehicle_access_pct": 0.9657754011,
-"commute_pct": 0.0234052318,
-"voter_pct": 0.13,
-"diesel_pm_rank": 77.358490566,
-"pm_rank": 81.0426540284,
-"safe_drinking_water_rank": 100,
-"ozone_rank": 81.1320754717,
-"park_access_ppa": 5,
-"employment_density": 1.4384488735,
-"race_white_total": 3456,
-"race_black_total": 1004,
-"race_asian_total": 24,
-"race_american_indian_alaskan_native_alone_total": 17,
-"race_native_hawaiian_pacific_islander_alone_total": 0,
-"race_other_alone_total": 38,
-"race_two_or_more_total": 247,
-"age_under_19_total": 1279,
-"age_20_29_total": 603,
-"age_30_39_total": 800,
-"age_40_49_total": 618,
-"age_50_59_total": 666,
-"age_60_69_total": 451,
-"age_70_over_total": 369,
-"median_household_income_z": -0.5813788125,
-"supermarket_access_z": -1.4026176362,
-"tree_canopy_z": -0.7137432898,
-"above_poverty_z": -0.055547572,
-"employed_z": -0.2003124619,
-"bachelors_plus_z": -0.5011067587,
-"high_school_enrollment_z": 0.483717755,
-"pre_school_enrollment_z": 0.5371756973,
-"health_insurance_z": -0.0715844139,
-"owners_z": -0.286179733,
-"habitable_z": 0.5039842141,
-<li>uncrowded_z": 0.2271553349,
-<li>severe_cost_burden_owner_z": -0.9568161547,
-<li>severe_cost_burden_renter_z": -0.2794991492,
-<li>two_parent_z": -0.2813132373,
-<li>vehicle_access_z": 0.4290288412,
-<li>commute_z": -0.4844479942,
-<li>voter_z": -1.3339576583,
-<li>diesel_pm_z": -0.9580832165,
+<li>All - Proportion of insured population that filed a claim related to one of the DHIN major disease categories within the census tract</li>
+<li>acqhypo - Proportion of all claims relating to acquired hypothyroidism </li>
+<li>alzdisease - Proportion of all claims related to alzhiemer disease </li>
+<li>alzdisorders - Proportion of all claims related to alzhiemer related disorders, or senile dementia </li>
+<li>ami - Proportion of all claims related to acute myocardial infarction </li>
+<li>anemia - Proportion of all claims related to anemia </li>
+<li>arthritis - Proportion of all claims related to rheumatoid arthritis/osteoarthritis </li>
+<li>asthma - Proportion of all claims related to asthma </li>
+<li>atrialfib - Proportion of all claims related to atrial fibrillation </li>
+<li>breastcancer - Proportion of all claims related to breast cancer </li>
+<li>cataract - Proportion of all claims related to cataract </li>
+<li>ckd - Proportion of all claims related to chronic kidney disease </li>
+<li>colorectalcancer - Proportion of all claims related to colorectal cancer </li>
+<li>copd - Proportion of all claims related to chronic obstructive pulmonary disease </li>
+<li>depression - Proportion of all claims related to depression </li>
+<li>diabetes - Proportion of all claims related to diabetes </li>
+<li>endometrial - Proportion of all claims related to endometrial cancer</li>
+<li>glaucoma - Proportion of all claims related glaucoma </li>
+<li>heartfailure - Proportion of all claims related to heart failure </li>
+<li>hipfracture - Proportion of all claims related to hip fracture </li>
+<li>hyperlipidemia - Proportion of all claims related to hyperlipidemia </li>
+<li>hyperplasia - Proportion of all claims related to benign prostatic hyperplasia </li>
+<li>hypertension - Proportion of all claims related to hypertension </li>
+<li>ihd - Proportion of all claims related to ischemic heart disease </li>
+<li>lungcancer - Proportion of all claims related to lung cancer </li>
+<li>osteoporosis - Proportion of all claims related to osteoporosis </li>
+<li>prostatecancer - Proportion of all claims related to prostate cancer </li>
+<li>stroke - Proportion of all claims related to stroke / transient ischemic attack </li>
+<li>year - Calendar year period of data collection </li>
+<li>population_count - Total census tract population </li>
+<li>median_household_income - Census tract median household income (USD) </li>
+<li>supermarket_access_pct - 0 </li>
+<li>tree_canopy_pct": 0.109 </li>
+<li>race_white_pct - Percentage of census tract population self-identifying as White </li>
+<li>race_black_pct - Percentage of census tract population self-identifying as Black </li>
+<li>race_asian_pct - Percentage of census tract population self-identifying as Asian </li>
+<li>race_american_indian_alaskan_native_alone_pct - Percentage of census tract population self-identifying as American Indian and/or Alaskan Native </li>
+<li>race_native_hawaiian_pacific_islander_alone_pct - Percentage of census tract population self-identifying as solely Native Hawaiian and/or Pacific Islander </li>
+<li>race_other_alone_pct - Percentage of census tract population identifying as Other </li>
+<li>race_two_or_more_pct - Percentage of census tract population identifying as two or more races</li>
+<li>gender_total_male_pct - Percentage of census tract population identifying as male</li>
+<li>gender_total_female_pct - Percentage of census tract population identifying as male </li>
+<li>age_under_19_pct - Percentage of census tract population under the age of 19 </li>
+<li>age_20_29_pct - Percentage of census tract population between the ages of 20 - 29</li>
+<li>age_30_39_pct - Percentage of census tract population between the ages of 30 - 39</li>
+<li>age_40_49_pct - Percentage of census tract population between the ages of 40 - 49</li>
+<li>age_50_59_pct - Percentage of census tract population between the ages of 50 - 59</li>
+<li>age_60_69_pct - Percentage of census tract population between the ages of 60 - 69</li>
+<li>age_70_over_pct - Percentage of census tract population over the age of 70 </li>
+<li>above_poverty_pct - Percentage of census tract population living above the poverty line</li>
+<li>employed_pct - Percentage of census tract population that is employed</li>
+<li>bachelors_plus_pct": 0.2238037553 </li>
+<li>high_school_enrollment_pct - Percentage of high school aged census tract population that is enrolled in high school</li>
+<li>pre_school_enrollment_pct - Percentage of preschool aged census tract population that is enrolled in preschool school< </li>
+<li>health_insurance_pct - Percentage of census tract population with health insurance </li>
+<li>medicare_pct Percentage of census tract population with Medicare </li>
+<li>medicaid_pct - Percentage of census tract population with Medicaid </li>
+"owners_pct": 0.6352941176 </li>
+"habitable_pct": 1 </li>
+"uncrowded_pct": 0.9877005348 </li>
+"severe_cost_burden_owner_pct": 0.1356589147 </li>
+"severe_cost_burden_renter_pct": 0.2323943662 </li>
+"two_parent_pct": 0.5381818182 </li>
+"vehicle_access_pct": 0.9657754011 </li>
+"commute_pct": 0.0234052318 </li>
+"voter_pct": 0.13 </li>
+"diesel_pm_rank": 77.358490566 </li>
+"pm_rank": 81.0426540284 </li>
+"safe_drinking_water_rank": 100 </li>
+"ozone_rank": 81.1320754717 </li>
+"park_access_ppa": 5 </li>
+"employment_density": 1.4384488735 </li>
+"race_white_total": 3456 </li>
+"race_black_total": 1004 </li>
+"race_asian_total": 24 </li>
+"race_american_indian_alaskan_native_alone_total": 17 </li>
+"race_native_hawaiian_pacific_islander_alone_total": 0 </li>
+"race_other_alone_total": 38 </li>
+"race_two_or_more_total": 247 </li>
+"age_under_19_total": 1279 </li>
+"age_20_29_total": 603 </li>
+"age_30_39_total": 800 </li>
+"age_40_49_total": 618 </li>
+"age_50_59_total": 666 </li>
+"age_60_69_total": 451 </li>
+"age_70_over_total": 369 </li>
+"median_household_income_z": -0.5813788125 </li>
+"supermarket_access_z": -1.4026176362 </li>
+"tree_canopy_z": -0.7137432898 </li>
+"above_poverty_z": -0.055547572 </li>
+"employed_z": -0.2003124619 </li>
+"bachelors_plus_z": -0.5011067587 </li>
+"high_school_enrollment_z": 0.483717755 </li>
+"pre_school_enrollment_z": 0.5371756973 </li>
+"health_insurance_z": -0.0715844139 </li>
+"owners_z": -0.286179733 </li>
+"habitable_z": 0.5039842141 </li>
+<li>uncrowded_z": 0.2271553349 </li>
+<li>severe_cost_burden_owner_z": -0.9568161547 </li>
+<li>severe_cost_burden_renter_z": -0.2794991492 </li>
+<li>two_parent_z": -0.2813132373 </li>
+<li>vehicle_access_z": 0.4290288412 </li>
+<li>commute_z": -0.4844479942 </li>
+<li>voter_z": -1.3339576583 </li>
+<li>diesel_pm_z": -0.9580832165 </li>
 <li>pm_z": -1.1009064207,
 <li>safe_drinking_water_z": -1.6867702161,
 <li>ozone_z": -1.899905647,
@@ -336,4 +335,9 @@ race_two_or_more_pct": 0.0516088592,
 <li>"park_access_ppa_rank": 100,
 <li>"employment_density_rank": 53.3980582524
 </ul>
--->
+
+
+rank, total, z, unweighted
+
+### Acknowledgements
+The CWI API was developed by the [Data Innovation Lab, Tech Impact](https://techimpact.org). This effort was made possible by our partnerships with Kate DuPont Phillips of Healthy Communities Delaware, Renata Kowalczyk of Wilmington Alliance, Mia Papas of ChristianaCare, and Rita Landgraf of University of Delaware. We would like to extend our deepest thanks for the support and guidance that enabled the success of this initiative.
