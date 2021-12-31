@@ -6,7 +6,7 @@
 
 ### Overview
 The REST API exposes census tract level data summarizing insurance claims of select chronic diseases per the Delaware Health Information Network (DHIN) database, 
-as well as socioeconomic indicators of community wellness across economic, education, environment, healthcare, housing, social, and transportation categories. The methodology used to develop the community wellness index was derived from the (Healthy Places Index)[https://healthyplacesindex.org/wp-content/uploads/2021/04/HPI2Documentation2018-02-20-FINALrev2021-04-22.pdf].
+as well as socioeconomic indicators of community wellness across economic, education, environment, healthcare, housing, social, and transportation categories. The methodology used to develop the community wellness index was derived from the [Healthy Places Index](https://healthyplacesindex.org/wp-content/uploads/2021/04/HPI2Documentation2018-02-20-FINALrev2021-04-22.pdf).
 This data is intended to facilitate the analysis of social determinants of health.
 
 ### Usage
