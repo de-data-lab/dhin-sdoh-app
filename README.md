@@ -6,7 +6,7 @@
 
 ### Overview
 The REST API exposes census tract level data summarizing insurance claims of select chronic diseases per the Delaware Health Information Network (DHIN) database, 
-as well as socioeconomic indicators of community wellness across economic, education, healthcare, housing, social, and transportation categories. 
+as well as socioeconomic indicators of community wellness across economic, education, environment, healthcare, housing, social, and transportation categories. The methodology used to develop the community wellness index was derived from the (Healthy Places Index)[https://healthyplacesindex.org/wp-content/uploads/2021/04/HPI2Documentation2018-02-20-FINALrev2021-04-22.pdf].
 This data is intended to facilitate the analysis of social determinants of health.
 
 ### Usage
@@ -182,6 +182,7 @@ parameters:
 ```
 
 ### Data Dictionary
+All descriptions are relative to the census tract geographic area indicated by `GEOID`.
 <ul>
 <li>GEOID - Census Tract Code</li>
 <li>All - Proportion of insured population that filed a claim related to one of the DHIN major disease categories within the census tract</li>
@@ -215,129 +216,64 @@ parameters:
 <li>year - Calendar year period of data collection </li>
 <li>population_count - Total census tract population </li>
 <li>median_household_income - Census tract median household income (USD) </li>
-<li>supermarket_access_pct - 0 </li>
-<li>tree_canopy_pct": 0.109 </li>
-<li>race_white_pct - Percentage of census tract population self-identifying as White </li>
-<li>race_black_pct - Percentage of census tract population self-identifying as Black </li>
-<li>race_asian_pct - Percentage of census tract population self-identifying as Asian </li>
-<li>race_american_indian_alaskan_native_alone_pct - Percentage of census tract population self-identifying as American Indian and/or Alaskan Native </li>
-<li>race_native_hawaiian_pacific_islander_alone_pct - Percentage of census tract population self-identifying as solely Native Hawaiian and/or Pacific Islander </li>
-<li>race_other_alone_pct - Percentage of census tract population identifying as Other </li>
-<li>race_two_or_more_pct - Percentage of census tract population identifying as two or more races</li>
-<li>gender_total_male_pct - Percentage of census tract population identifying as male</li>
-<li>gender_total_female_pct - Percentage of census tract population identifying as male </li>
-<li>age_under_19_pct - Percentage of census tract population under the age of 19 </li>
-<li>age_20_29_pct - Percentage of census tract population between the ages of 20 - 29</li>
-<li>age_30_39_pct - Percentage of census tract population between the ages of 30 - 39</li>
-<li>age_40_49_pct - Percentage of census tract population between the ages of 40 - 49</li>
-<li>age_50_59_pct - Percentage of census tract population between the ages of 50 - 59</li>
-<li>age_60_69_pct - Percentage of census tract population between the ages of 60 - 69</li>
-<li>age_70_over_pct - Percentage of census tract population over the age of 70 </li>
-<li>above_poverty_pct - Percentage of census tract population living above the poverty line</li>
-<li>employed_pct - Percentage of census tract population that is employed</li>
-<li>bachelors_plus_pct": 0.2238037553 </li>
-<li>high_school_enrollment_pct - Percentage of high school aged census tract population that is enrolled in high school</li>
-<li>pre_school_enrollment_pct - Percentage of preschool aged census tract population that is enrolled in preschool school< </li>
-<li>health_insurance_pct - Percentage of census tract population with health insurance </li>
-<li>medicare_pct Percentage of census tract population with Medicare </li>
-<li>medicaid_pct - Percentage of census tract population with Medicaid </li>
-"owners_pct": 0.6352941176 </li>
-"habitable_pct": 1 </li>
-"uncrowded_pct": 0.9877005348 </li>
-"severe_cost_burden_owner_pct": 0.1356589147 </li>
-"severe_cost_burden_renter_pct": 0.2323943662 </li>
-"two_parent_pct": 0.5381818182 </li>
-"vehicle_access_pct": 0.9657754011 </li>
-"commute_pct": 0.0234052318 </li>
-"voter_pct": 0.13 </li>
-"diesel_pm_rank": 77.358490566 </li>
-"pm_rank": 81.0426540284 </li>
-"safe_drinking_water_rank": 100 </li>
-"ozone_rank": 81.1320754717 </li>
-"park_access_ppa": 5 </li>
-"employment_density": 1.4384488735 </li>
-"race_white_total": 3456 </li>
-"race_black_total": 1004 </li>
-"race_asian_total": 24 </li>
-"race_american_indian_alaskan_native_alone_total": 17 </li>
-"race_native_hawaiian_pacific_islander_alone_total": 0 </li>
-"race_other_alone_total": 38 </li>
-"race_two_or_more_total": 247 </li>
-"age_under_19_total": 1279 </li>
-"age_20_29_total": 603 </li>
-"age_30_39_total": 800 </li>
-"age_40_49_total": 618 </li>
-"age_50_59_total": 666 </li>
-"age_60_69_total": 451 </li>
-"age_70_over_total": 369 </li>
-"median_household_income_z": -0.5813788125 </li>
-"supermarket_access_z": -1.4026176362 </li>
-"tree_canopy_z": -0.7137432898 </li>
-"above_poverty_z": -0.055547572 </li>
-"employed_z": -0.2003124619 </li>
-"bachelors_plus_z": -0.5011067587 </li>
-"high_school_enrollment_z": 0.483717755 </li>
-"pre_school_enrollment_z": 0.5371756973 </li>
-"health_insurance_z": -0.0715844139 </li>
-"owners_z": -0.286179733 </li>
-"habitable_z": 0.5039842141 </li>
-<li>uncrowded_z": 0.2271553349 </li>
-<li>severe_cost_burden_owner_z": -0.9568161547 </li>
-<li>severe_cost_burden_renter_z": -0.2794991492 </li>
-<li>two_parent_z": -0.2813132373 </li>
-<li>vehicle_access_z": 0.4290288412 </li>
-<li>commute_z": -0.4844479942 </li>
-<li>voter_z": -1.3339576583 </li>
-<li>diesel_pm_z": -0.9580832165 </li>
-<li>pm_z": -1.1009064207,
-<li>safe_drinking_water_z": -1.6867702161,
-<li>ozone_z": -1.899905647,
-<li>park_access_ppa_z": 2.1106871439,
-<li>employment_density_z": -0.1736185698,
-<li>economic_unweighted": -0.2790796155,
-<li>education_unweighted": 0.1732622312,
-<li>healthcare_unweighted": -0.0715844139,
-<li>housing_unweighted": -0.1582710976,
-<li>neighborhood_unweighted": -0.044823088,
-<li>environment_unweighted": -1.4114163751,
-<li>social_unweighted": -0.8076354478,
-<li>transportation_unweighted": -0.0277095765,
-<li>cwi_score": -0.2272321714,
-<li>cwi_score_rank": 32.5242718447,
-<li>economic_unweighted_rank": 35.4368932039,
-<li>education_unweighted_rank": 60.1941747573,
-<li>healthcare_unweighted_rank": 37.3786407767,
-<li>housing_unweighted_rank": 33.4951456311,
-<li>neighborhood_unweighted_rank": 48.5436893204,
-<li>environment_unweighted_rank": 3.3980582524,
-<li>social_unweighted_rank": 14.5631067961,
-<li>transportation_unweighted_rank": 46.1165048544,
-<li>supermarket_access_pct_rank": 0,
-<li>tree_canopy_pct_rank": 26.213592233,
-<li>above_poverty_pct_rank": 44.6601941748,
-<li>employed_pct_rank": 38.3495145631,
-<li>bachelors_plus_pct_rank": 36.8932038835,
-<li>high_school_enrollment_pct_rank": 100,
-<li>pre_school_enrollment_pct_rank": 77.8378378378,
-<li>health_insurance_pct_rank": 37.3786407767,
-<li>medicare_pct_rank": 81.5533980583,
-<li>"medicaid_pct_rank": 66.5048543689,
-<li>"owners_pct_rank": 31.5533980583,
-<li>habitable_pct_rank": 100,
-<li>uncrowded_pct_rank": 62.1794871795,
-<li>"severe_cost_burden_owner_pct_rank": 84.9514563107,
-<li>"severe_cost_burden_renter_pct_rank": 64.5631067961,
-<li>"two_parent_pct_rank": 34.9514563107,
-<li>"vehicle_access_pct_rank": 60.396039604,
-<li>"commute_pct_rank": 33.0097087379,
-<li>"voter_pct_rank": 9.4059405941,
-<li>"median_household_income_rank": 30.5825242718,
-<li>"park_access_ppa_rank": 100,
-<li>"employment_density_rank": 53.3980582524
+<li>supermarket_access_pct - Percentage of the urban and small town population residing less than 1/2 mile from a
+supermarket/large grocery store, and the percent of the rural population living less than 1 mile
+from a supermarket/large grocery store</li>
+<li>tree_canopy_pct - Population-weighted percentage of the census tract area with tree canopy </li>
+<li>race_white_pct - Percentage of population self-identifying as White </li>
+<li>race_black_pct - Percentage of population self-identifying as Black </li>
+<li>race_asian_pct - Percentage of population self-identifying as Asian </li>
+<li>race_american_indian_alaskan_native_alone_pct - Percentage of population identifying as American Indian and/or Alaskan Native </li>
+<li>race_native_hawaiian_pacific_islander_alone_pct - Percentage of population identifying as Native Hawaiian and/or Pacific Islander </li>
+<li>race_other_alone_pct - Percentage of population identifying as Other </li>
+<li>race_two_or_more_pct - Percentage of population identifying as two or more races</li>
+<li>gender_total_male_pct - Percentage of population identifying as male</li>
+<li>gender_total_female_pct - Percentage of population identifying as male </li>
+<li>age_under_19_pct - Percentage of population under the age of 19 </li>
+<li>age_20_29_pct - Percentage of population between the ages of 20 - 29</li>
+<li>age_30_39_pct - Percentage of population between the ages of 30 - 39</li>
+<li>age_40_49_pct - Percentage of population between the ages of 40 - 49</li>
+<li>age_50_59_pct - Percentage of population between the ages of 50 - 59</li>
+<li>age_60_69_pct - Percentage of population between the ages of 60 - 69</li>
+<li>age_70_over_pct - Percentage of population over the age of 70 </li>
+<li>above_poverty_pct - Percentage of population living above the poverty line</li>
+<li>employed_pct - Percentage of population that is employed</li>
+<li>bachelors_plus_pct - Percentage of population that holds a bachelor degree or higher </li>
+<li>high_school_enrollment_pct - Percentage of high school aged population (15 - 17) that is enrolled in high school</li>
+<li>pre_school_enrollment_pct - Percentage of preschool aged population (3 - 4) that is enrolled in preschool school< </li>
+<li>health_insurance_pct - Percentage of population with health insurance </li>
+<li>medicare_pct - Percentage of population with Medicare </li>
+<li>medicaid_pct - Percentage of population with Medicaid </li>
+<li>owners_pct -  Percentage of housing units occupied by the owner(s)</li>
+<li>habitable_pct - Average percentage of housing units with a complete kitchen and/or plumbing </li>
+<li>uncrowded_pct - Percentage of housing units with an occupant per room ratio equal to or less than 1  </li>
+<li>severe_cost_burden_owner_pct - Percentage of owner occupied housing units with below median MFI </li>
+<li>severe_cost_burden_renter_pct - Percentage of renter occupied housing units with below median MFI </li>
+<li>two_parent_pct - Percentage of housing units with children living with two parents </li>
+<li>vehicle_access_pct - Percentage of housing units with an automotive vehicle available to household members</li>
+<li>commute_pct - Percentage of census tract total worker population over the age of 16 that commutes to work by biking, walking, or transit (excludes worker population that works from home) </li>
+<li>voter_pct - Percentage of census tract population: 0.13 </li>
+<li>diesel_pm_rank - Census tract diesel particular matter percentile (mixture of particles that is part of diesel exhaust)</li>
+<li>pm_rank - Census tract particulate matter 2.5 percentile (PM 2.5 - tiny particles or droplets in the air that are two and one half microns or less in width)</li>
+<li>safe_drinking_water_rank - Census tract safe drinking water percentile (drinking water contaminant index for selected contaminants)</li>
+<li>ozone_rank -  Census tract ozone percentile (Mean of summer months (May-October) of the daily maximum 8-hour ozone concentration (ppm))</li>
+<li>park_access_ppa - Percentage of the population living within 1/2 mile of a park, beach, or open space greater than
+1 acre </li>
+<li>employment_density - jobs/acre </li>
+<li>economic_unweighted": -0.2790796155 </li>
+<li>education_unweighted": 0.1732622312 </li>
+<li>healthcare_unweighted": -0.0715844139 </li>
+<li>housing_unweighted": -0.1582710976 </li>
+<li>neighborhood_unweighted": -0.044823088 </li>
+<li>environment_unweighted": -1.4114163751 </li>
+<li>social_unweighted": -0.8076354478 </li>
+<li>transportation_unweighted": -0.0277095765 </li>
+<li>cwi_score": -0.2272321714 </li>
+<li>cwi_score_rank": 32.5242718447 </li>
 </ul>
 
+Select variables are suffixed with  `_total`, `_z`, or `_rank`, corresponding to total count, standardized, or percentile values respectively.
 
-rank, total, z, unweighted
 
 ### Acknowledgements
 The CWI API was developed by the [Data Innovation Lab, Tech Impact](https://techimpact.org). This effort was made possible by our partnerships with Kate DuPont Phillips of Healthy Communities Delaware, Renata Kowalczyk of Wilmington Alliance, Mia Papas of ChristianaCare, and Rita Landgraf of University of Delaware. We would like to extend our deepest thanks for the support and guidance that enabled the success of this initiative.
