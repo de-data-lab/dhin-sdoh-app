@@ -6,7 +6,7 @@
 
 ### Overview
 The REST API exposes census tract level data summarizing insurance claims of select chronic diseases per the Delaware Health Information Network (DHIN) database, 
-as well as socioeconomic indicators of community wellness across economic, education, environment, healthcare, housing, social, and transportation categories. The methodology used to develop the community wellness index was derived from the [Healthy Places Index](https://healthyplacesindex.org/wp-content/uploads/2021/04/HPI2Documentation2018-02-20-FINALrev2021-04-22.pdf).
+as well as socioeconomic indicators of community wellness across economic, education, environment, healthcare, housing, social, and transportation domains. The methodology used to develop the community wellness index was derived from the [Healthy Places Index](https://healthyplacesindex.org/wp-content/uploads/2021/04/HPI2Documentation2018-02-20-FINALrev2021-04-22.pdf).
 This data is intended to facilitate the analysis of social determinants of health.
 
 ### Usage
@@ -186,7 +186,7 @@ All descriptions are relative to the census tract geographic area indicated by `
 <ul>
 <li>GEOID - Census Tract Code</li>
 <li>All - Proportion of insured population that filed a claim related to one of the DHIN major disease categories within the census tract</li>
-<li>acqhypo - Proportion of all claims relating to acquired hypothyroidism </li>
+<li>acqhypo - Proportion of all claims related to acquired hypothyroidism </li>
 <li>alzdisease - Proportion of all claims related to alzhiemer disease </li>
 <li>alzdisorders - Proportion of all claims related to alzhiemer related disorders, or senile dementia </li>
 <li>ami - Proportion of all claims related to acute myocardial infarction </li>
@@ -259,17 +259,17 @@ from a supermarket/large grocery store</li>
 <li>ozone_rank -  Census tract ozone percentile (Mean of summer months (May-October) of the daily maximum 8-hour ozone concentration (ppm))</li>
 <li>park_access_ppa - Percentage of the population living within 1/2 mile of a park, beach, or open space greater than
 1 acre </li>
-<li>employment_density - jobs/acre </li>
-<li>economic_unweighted": -0.2790796155 </li>
-<li>education_unweighted": 0.1732622312 </li>
-<li>healthcare_unweighted": -0.0715844139 </li>
-<li>housing_unweighted": -0.1582710976 </li>
-<li>neighborhood_unweighted": -0.044823088 </li>
-<li>environment_unweighted": -1.4114163751 </li>
-<li>social_unweighted": -0.8076354478 </li>
-<li>transportation_unweighted": -0.0277095765 </li>
-<li>cwi_score": -0.2272321714 </li>
-<li>cwi_score_rank": 32.5242718447 </li>
+<li>employment_density - Jobs/acre </li>
+<li>economic_unweighted - Average of standardized above_poverty, employed, and median_household_income variables</li>
+<li>education_unweighted - Average of standardized bachelors_plus, high_school_enrollment, and pre_school_enrollment variables </li>
+<li>healthcare_unweighted - The standardized health_insurance variable  </li>
+<li>housing_unweighted - Average of standardized owners, habitable, severe_cost_burden_renter, severe_cost_burden_owner, and uncrowded variables </li>
+<li>neighborhood_unweighted - Average of standardized park_access_ppa, tree_canopy, supermarket_access, and employment_density variables</li>
+<li>environment_unweighted - Average of standardized diesel_pm, safe_drinking_water, ozone, and pm variables </li>
+<li>social_unweighted - Average of standardized voter and two_parent variables </li>
+<li>transportation_unweighted - Average of standardized vehicle_access and commute variables  </li>
+<li>cwi_score - Weighted average of domain scores (economic: .32, education: .19, healthcare: .05, housing: .05, neighborhood: .08, environment: .05, social: .10, transportation: .16) </li>
+<li>cwi_score_rank -  CWI score percentile </li>
 </ul>
 
 Select variables are suffixed with  `_total`, `_z`, or `_rank`, corresponding to total count, standardized, or percentile values respectively.
