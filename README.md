@@ -252,7 +252,7 @@ from a supermarket/large grocery store</li>
 <li>two_parent_pct - Percentage of housing units with children living with two parents </li>
 <li>vehicle_access_pct - Percentage of housing units with an automotive vehicle available to household members</li>
 <li>commute_pct - Percentage of census tract total worker population over the age of 16 that commutes to work by biking, walking, or transit (excludes worker population that works from home) </li>
-<li>voter_pct - Percentage of census tract population: 0.13 </li>
+<li>voter_pct - Percentage of census tract population </li>
 <li>diesel_pm_rank - Census tract diesel particular matter percentile (mixture of particles that is part of diesel exhaust)</li>
 <li>pm_rank - Census tract particulate matter 2.5 percentile (PM 2.5 - tiny particles or droplets in the air that are two and one half microns or less in width)</li>
 <li>safe_drinking_water_rank - Census tract safe drinking water percentile (drinking water contaminant index for selected contaminants)</li>
