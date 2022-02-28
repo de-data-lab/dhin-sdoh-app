@@ -277,3 +277,23 @@ Select variables are suffixed with  `_total`, `_z`, or `_rank`, corresponding to
 
 ### Acknowledgements
 The CWI API was developed by the [Data Innovation Lab, Tech Impact](https://techimpact.org). This effort was made possible by our partnerships with Kate DuPont Phillips of Healthy Communities Delaware, Renata Kowalczyk of Wilmington Alliance, Mia Papas of ChristianaCare, and Rita Landgraf of University of Delaware. We would like to extend our deepest thanks for the support and guidance that enabled the success of this initiative.
+
+
+## Running the app locally
+
+1. Clone the repository 
+2. Set up a virtual environemnt (optional)
+
+`virtualenv venv`
+
+`source venv/bin/activate`
+
+3. Install dependenices
+
+`pip -r requirements.txt`
+
+4. Start the app
+
+`python app.py`
+
+5. The API will be available at http://localhost:8000/data
