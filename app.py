@@ -12,7 +12,7 @@ def home():
     current_url = urlparse(request.base_url)
     entry_point = current_url.hostname + '/data'
 
-    return 'Use the API entrypoint ' + entry_point + ' to query'
+    return 'Use the API entry point ' + entry_point + ' to query'
 
 @app.route('/data', methods = ['GET'])
 def get_data():
