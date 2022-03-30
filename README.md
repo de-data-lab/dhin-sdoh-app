@@ -278,6 +278,19 @@ Select variables are suffixed with  `_total`, `_z`, or `_rank`, corresponding to
 ### Acknowledgements
 The CWI API was developed by the [Data Innovation Lab, Tech Impact](https://techimpact.org). This effort was made possible by our partnerships with Kate DuPont Phillips of Healthy Communities Delaware, Renata Kowalczyk of Wilmington Alliance, Mia Papas of ChristianaCare, and Rita Landgraf of University of Delaware. We would like to extend our deepest thanks for the support and guidance that enabled the success of this initiative.
 
+### Data Sources
+
+In calculating the community wellness index (CWI), we used data from the following sources:
+
+- ACS, American Community Survey
+- CHAS, Comprehensive Housing Assessment System
+- CalEPA; California Environmental Protection Agency
+- NLCD, National Land Cover Database
+- USDA FARA, U.S. Department of Agriculture Food Access Research Atlas
+- USEPA, U.S. Environmental Protection Agency
+- UC Berkeley, University of California, Berkeley
+- GreenInfo
+
 
 ## Running the app locally
 
