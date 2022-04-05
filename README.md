@@ -137,24 +137,6 @@ parameters:
 "ozone_z": -2.3121349216,
 "park_access_ppa_z": -1.0200845788,
 "employment_density_z": -0.4158042316,
-"economic_unweighted": -0.1395655947,
-"education_unweighted": -0.0221889745,
-"healthcare_unweighted": -0.3493406109,
-"housing_unweighted": 0.5890758973,
-"neighborhood_unweighted": -0.4779818334,
-"environment_unweighted": -1.3872151605,
-"social_unweighted": 1.03202578,
-"transportation_unweighted": -0.1123671423,
-"cwi_score": -0.0592656006,
-"cwi_score_rank": 49.0291262136,
-"economic_unweighted_rank": 41.7475728155,
-"education_unweighted_rank": 44.6601941748,
-"healthcare_unweighted_rank": 28.640776699,
-"housing_unweighted_rank": 87.8640776699,
-"neighborhood_unweighted_rank": 13.5922330097,
-"environment_unweighted_rank": 4.854368932,
-"social_unweighted_rank": 89.3203883495,
-"transportation_unweighted_rank": 33.4951456311,
 "supermarket_access_pct_rank": 0,
 "tree_canopy_pct_rank": 79.6116504854,
 "above_poverty_pct_rank": 49.5145631068,
@@ -259,28 +241,17 @@ from a supermarket/large grocery store</li>
 <li>ozone_rank -  Census tract ozone percentile (Mean of summer months (May-October) of the daily maximum 8-hour ozone concentration (ppm))</li>
 <li>park_access_ppa - Percentage of the population living within 1/2 mile of a park, beach, or open space greater than
 1 acre </li>
-<li>employment_density - Jobs/acre </li>
-<li>economic_unweighted - Average of standardized above_poverty, employed, and median_household_income variables</li>
-<li>education_unweighted - Average of standardized bachelors_plus, high_school_enrollment, and pre_school_enrollment variables </li>
-<li>healthcare_unweighted - The standardized health_insurance variable  </li>
-<li>housing_unweighted - Average of standardized owners, habitable, severe_cost_burden_renter, severe_cost_burden_owner, and uncrowded variables </li>
-<li>neighborhood_unweighted - Average of standardized park_access_ppa, tree_canopy, supermarket_access, and employment_density variables</li>
-<li>environment_unweighted - Average of standardized diesel_pm, safe_drinking_water, ozone, and pm variables </li>
-<li>social_unweighted - Average of standardized voter and two_parent variables </li>
-<li>transportation_unweighted - Average of standardized vehicle_access and commute variables  </li>
-<li>cwi_score - Weighted average of domain scores (economic: .32, education: .19, healthcare: .05, housing: .05, neighborhood: .08, environment: .05, social: .10, transportation: .16) </li>
-<li>cwi_score_rank -  CWI score percentile </li>
 </ul>
 
 Select variables are suffixed with  `_total`, `_z`, or `_rank`, corresponding to total count, standardized, or percentile values respectively.
 
 
 ### Acknowledgements
-The CWI API was developed by the [Data Innovation Lab, Tech Impact](https://techimpact.org). This effort was made possible by our partnerships with Kate DuPont Phillips of Healthy Communities Delaware, Renata Kowalczyk of Wilmington Alliance, Mia Papas of ChristianaCare, and Rita Landgraf of University of Delaware. We would like to extend our deepest thanks for the support and guidance that enabled the success of this initiative.
+The  API was developed by the [Data Innovation Lab, Tech Impact](https://techimpact.org). This effort was made possible by our partnerships with Kate DuPont Phillips of Healthy Communities Delaware, Renata Kowalczyk of Wilmington Alliance, Mia Papas of ChristianaCare, and Rita Landgraf of University of Delaware. We would like to extend our deepest thanks for the support and guidance that enabled the success of this initiative.
 
 ### Data Sources
 
-In calculating the community wellness index (CWI), we used data from the following sources:
+Data accesible at the census tract level originate from the following sources:
 
 - ACS, American Community Survey
 - CHAS, Comprehensive Housing Assessment System
