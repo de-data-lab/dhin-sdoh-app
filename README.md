@@ -1,19 +1,23 @@
-# Delaware Health Information Network and Community Wellness Index Data API
-## DHIN-CWI REST API
+# Delaware Health Information Network and Social Determinants of Health (SDOH) Indicators API
+## DHIN-SDOH REST API
 ### Quickstart
 
 `curl dhin-cwi.ddil.ai/data`
 
 ### Overview
-The REST API exposes census tract level data summarizing insurance claims of select chronic diseases per the Delaware Health Information Network (DHIN) database, 
-as well as socioeconomic indicators of community wellness across economic, education, environment, healthcare, housing, social, and transportation domains. The methodology used to develop the community wellness index was derived from the [Healthy Places Index](https://healthyplacesindex.org/wp-content/uploads/2021/04/HPI2Documentation2018-02-20-FINALrev2021-04-22.pdf).
-This data is intended to facilitate the analysis of social determinants of health.
+
+This REST API exposes 35 census tract level features (detailed in the documentation below) for all 3 counties in Delaware between 2018 and 2019 that broadly represent Social Determinants of Health (SDOH) indicators. It is important to note, that not all variables are unique in context. For example, each age category is represented as its own column, all variables of age, just different categories for it. 
+
+In addition to this, we summarize insurance claims from the Delaware Health Information Network's (DHIN) Health Care Claims Database (HCCD) of select chronic diseases (N=27) defined by the Centers for Medicare & Medicaid Services(CMS). We broadly derived data sources from the [Healthy Places Index](https://healthyplacesindex.org/wp-content/uploads/2021/04/HPI2Documentation2018-02-20-FINALrev2021-04-22.pdf) framework, adapting it to the avialable resources in the state of Delaware. Each entry for a specific chronic disease represents the census tract normalized rate of disease for that region. 
+
+This data is intended to facilitate the 1) analysis of social determinants of health at the census tract levl and 2) provide a case-use of how to incorporate data on social determinants of health to your own domain of interest, in this case, health claims. 
+
 
 ### Usage
-The API is currently hosted at https://dhin-cwi.ddil.ai.
+The DHIN–SDOH API is currently hosted at https://dhin-cwi.ddil.ai.
 
 #### Endpoints
-##### Get DHIN-CWI data 
+##### Get DHIN-SDOH data 
 `GET /data` 
 parameters:
 -- year ([2018, 2019], optional)
@@ -165,6 +169,7 @@ parameters:
 
 ### Data Dictionary
 All descriptions are relative to the census tract geographic area indicated by `GEOID`.
+
 <ul>
 <li>GEOID - Census Tract Code</li>
 <li>All - Proportion of insured population that filed a claim related to one of the DHIN major disease categories within the census tract</li>
@@ -247,7 +252,8 @@ Select variables are suffixed with  `_total`, `_z`, or `_rank`, corresponding to
 
 
 ### Acknowledgements
-The  API was developed by the [Data Innovation Lab, Tech Impact](https://techimpact.org). This effort was made possible by our partnerships with Kate DuPont Phillips of Healthy Communities Delaware, Renata Kowalczyk of Wilmington Alliance, Mia Papas of ChristianaCare, and Rita Landgraf of University of Delaware. We would like to extend our deepest thanks for the support and guidance that enabled the success of this initiative.
+
+The  API was developed by the [Data Innovation Lab, Tech Impact](https://techimpact.org). This effort was made possible by our partnerships with Kate DuPont Phillips of Healthy Communities Delaware, Renata Kowalczyk of Wilmington Alliance, Mia Papas of ChristianaCare, and Rita Landgraf of University of Delaware and our work the the Delaware Health Information Network. We would like to extend our deepest thanks for the support and guidance that enabled the success of this initiative.
 
 ### Data Sources
 
