@@ -1,4 +1,4 @@
-# Delaware Health Information Network and Social Determinants of Health (SDOH) API
+# Delaware Health Information Network and Social Determinants of Health API
 ## DHIN-SDOH REST API
 ### Quickstart
 
