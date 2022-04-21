@@ -250,7 +250,14 @@ from a supermarket/large grocery store</li>
 
 Select variables are suffixed with  `_total`, `_z`, or `_rank`, corresponding to total count, standardized, or percentile values respectively.
 
+Please note that following variables have been carry-forwarded as they do not update frequently:
 
+- tree_canopy : Last updated in 2016.
+- park_access_ : Last updated in 2019.
+- supermarket_ : Last updated in 2019.
+- diesel_pm_z, safe_drinking_water_z, ozone_z  : Last updated in 2014.
+- park_access, supermarket_access : Last updated in 2017.
+- 
 ### Acknowledgements
 
 The  API was developed by the [Data Innovation Lab, Tech Impact](https://techimpact.org). This effort was made possible by our partnerships with Kate DuPont Phillips of Healthy Communities Delaware, Renata Kowalczyk of Wilmington Alliance, Mia Papas of ChristianaCare, and Rita Landgraf of University of Delaware and our work the the Delaware Health Information Network. We would like to extend our deepest thanks for the support and guidance that enabled the success of this initiative.
