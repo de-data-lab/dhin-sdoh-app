@@ -6,7 +6,7 @@
 
 ### Overview
 
-This REST API exposes 35 census tract level features (detailed in the documentation below) for all 3 counties in Delaware between 2018 and 2019 that broadly represent Social Determinants of Health (SDOH) indicators. It is important to note, that not all variables are unique in context. For example, each age category is represented as its own column, all variables of age, just different categories for it. 
+This REST API exposes 35 census tract level features (detailed in the documentation below) for all 3 counties in Delaware between 2018 and 2020 that broadly represent Social Determinants of Health (SDOH) indicators. It is important to note, that not all variables are unique in context. For example, each age category is represented as its own column, all variables of age, just different categories for it. 
 
 In addition to this, we summarize insurance claims from the Delaware Health Information Network's (DHIN) Health Care Claims Database (HCCD) of select chronic diseases (N=27) defined by the Centers for Medicare & Medicaid Services (CMS). We broadly derived data sources from the [Healthy Places Index](https://healthyplacesindex.org/wp-content/uploads/2021/04/HPI2Documentation2018-02-20-FINALrev2021-04-22.pdf) framework, adapting it to the avialable resources in the state of Delaware. Each entry for a specific chronic disease represents the census tract normalized rate of disease for that region. 
 
