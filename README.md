@@ -2,7 +2,7 @@
 ## DHIN-SDOH REST API
 ### Quickstart
 
-`curl dhin-cwi.ddil.ai/data`
+`curl sdoh.ddil.ai/data`
 
 ### Overview
 
@@ -14,7 +14,7 @@ This data is intended to facilitate the 1) analysis of social determinants of he
 
 
 ### Usage
-The DHIN–SDOH API is currently hosted at https://dhin-cwi.ddil.ai.
+The DHIN–SDOH API is currently hosted at http://sdoh.ddil.ai/data
 
 #### Endpoints
 ##### Get DHIN-SDOH data 
